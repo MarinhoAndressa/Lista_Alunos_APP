@@ -1,0 +1,9 @@
+SOBRE
+
+Olá! Meu nome é Andressa Lorena de Moura Marinho e atualmente estou cursando o 5º período de Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia de Rondônia.
+
+Este projeto consiste no desenvolvimento de uma Lista de Chamada Web, criada com o objetivo de facilitar o controle de presença de alunos de forma prática, organizada e acessível por meio da tecnologia web. A proposta busca oferecer uma solução moderna para o gerenciamento de chamadas em ambientes educacionais.
+
+O sistema está sendo desenvolvido como parte dos requisitos avaliativos da disciplina de Programação Web II, aplicando conhecimentos adquiridos ao longo do curso, como desenvolvimento front-end, back-end, banco de dados e integração de sistemas web.
+
+Agradeço pela visita ao projeto e espero que esta aplicação contribua para demonstrar na prática os conhecimentos desenvolvidos durante minha formação acadêmica.
