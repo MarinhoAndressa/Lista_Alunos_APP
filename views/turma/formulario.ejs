@@ -1,0 +1,36 @@
+<% const erros = validationErrors(locals.errors); %>
+<% const turma = locals.turma || {} %>
+
+<form action="/turmas/<%= turma.id ? turma.id + '/editar' : 'criar' %>" method="POST">
+
+    <!-- NOME -->
+    <div class="form-group mb-3">
+        <label for="nome">Nome da Turma</label>
+        <input type="text"
+               name="nome"
+               class="form-control <%= erros.has('nome') ? 'is-invalid' : '' %>"
+               value="<%= turma.nome || '' %>">
+
+        <% if (erros.has('nome')) { %>
+            <div class="invalid-feedback d-block">
+                <% erros.get('nome').forEach(msg => { %>
+                    <div><%= msg %></div>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+
+    <!-- ATIVO -->
+    <div class="form-group mb-3">
+        <label>Ativo?</label>
+        <select name="ativo" class="form-control">
+            <option value="true" <%= turma.ativo !== false ? 'selected' : '' %>>Ativo</option>
+            <option value="false" <%= turma.ativo === false ? 'selected' : '' %>>Inativo</option>
+        </select>
+    </div>
+
+    <!-- BOTÕES -->
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="/turmas" class="btn btn-secondary">Cancelar</a>
+
+</form>
